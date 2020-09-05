@@ -27,7 +27,7 @@
                                 
 
                 <div class="col-sm-4 bg-color">
-                <a class="btn btn-primary" href="bookkeeping.php" role=button>Watch Your Money</a>
+                <a class="btn btn-primary" href="bookkeeping-page.php" role=button>Watch Your Money</a>
                     
                 </div>
                 <div class="col-sm">
