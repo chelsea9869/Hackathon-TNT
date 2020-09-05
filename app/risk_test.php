@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles.css">
+<!-- <link rel="stylesheet" href="styles.css"> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 <div class="container">
   <header class="header">
     <h1 id="title" class="text-center">Financial Risk Tolerance Test</h1>
-    <p id="description" class="description text-center">
-
-    </p>
+    <p id="description" class="description text-center"></p>
   </header>
+</div>
+<br></br>
+<div class="container">
   <form action="process_risk_test.php" method="post" id="survey-form">
 
     <!-- survey source: https://missouri.qualtrics.com/jfe/form/SV_e5O9zdPbe1NDMWh -->
@@ -83,6 +88,7 @@
   <!-- <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body> -->
-</div>
+
+  </div>
 
 </html>
