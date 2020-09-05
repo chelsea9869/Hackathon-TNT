@@ -101,7 +101,7 @@ foreach($todayRecords as $record){
         <div id='left-content' style='width:50%;display:inline-table;margin-top:20px'>
             <div id='bookkeeping-input-expense' style='width:100%;'>
                 <h2> Input Your Expense</h2>
-                <form id='record-form' action='bookkeeping.php' method='POST'>
+                <form id='record-form' action='bookkeeping-page.php' method='POST'>
                     <table id='record-form-table'>
                             <thead>
                                 <tr>
@@ -124,7 +124,7 @@ foreach($todayRecords as $record){
 
             <div id='bookkeeping-input-income' style='width:100%;margin-top:50px'>
                 <h2> Input Your Income</h2>
-                <form id='record-form' action='bookkeeping.php' method='POST'>
+                <form id='record-form' action='bookkeeping-page.php' method='POST'>
                     <table id='record-form-table'>
                         <thead>
                             <tr>
