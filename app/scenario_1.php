@@ -2,8 +2,8 @@
 <html>
 
 <?php
-include '../navbar.php';
-require_once '../include/common.php';
+include 'navbar.php';
+require_once 'include/common.php';
 
 $years = 2;
 
@@ -37,8 +37,6 @@ $interest = $_SESSION['interest'];
 </head>
 
 <body>
-
-  <?php include 'navbar.php'; ?>
 
   <div class="centerDiv">
     <h3> Scenario 1 </h3>
