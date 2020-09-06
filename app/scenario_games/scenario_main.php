@@ -1,15 +1,19 @@
 <?php 
 
 require_once '../include/common.php';
-
+session_unset;
 $product_list = [
-    "Bonds" => "A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental).",
+    "Bonds" => "A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental).
+    Bond Information, Face Value: $1000, Interest 5%, Matruity Date: 10 years later",
     "Insurance" => "Insurance is a contract, represented by a policy, in which an individual or entity receives financial protection or reimbursement against losses from an insurance company.",
-    "Savings" => "Savings is the money a person has left over when they subtract their consumer spending from their disposable income over a given time period. ",
-    "CPF" => "The Central Provident Fund (CPF) is a mandatory benefit account providing retirement earnings and healthcare for Singaporeans. Contributions to the retirement account originate from both the employee and the employer. "
-]
+    "Savings" => "Savings is the money a person has left over when they subtract their consumer spending from their disposable income over a given time period. "
+];
 
-$_SESSION['initial'] = 20000;
+$_SESSION['balance'] = 50000;
+$_SESSION['age'] = 22;
+$_SESSION['interest'] = 0.01;
+$_SESSION['bond_rate'] = 0.05;
+$_SESSION['maturity_count'] = 10;
 
 
 ?>
@@ -43,7 +47,10 @@ $_SESSION['initial'] = 20000;
                     <td>Age:</td>
                     <td colspan="2">22</td>
                 </tr>
-                    
+                <tr>
+                    <td>Annual Savings Interest:</td>
+                    <td colspan="2">1.00%</td>
+                </tr>  
                 
                 <thead>
                     <tr>
@@ -55,12 +62,18 @@ $_SESSION['initial'] = 20000;
                 <tbody>
                     <?php
                         foreach($product_list as $prod=>$desc) {
+                            
                             echo "
                             <tr>
                                 <td>$prod</td>
                                 <td>$desc</td>
-                                <td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td>
+                                <td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>
                             ";
+                            // if ($prod != 'CPF') {
+                            //     echo "<td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>";
+                            // } else {
+                            //     echo "<td><input type='number' name='$prod-percent' min='20' max='100' step='1'>%</td></tr>";
+                            // }
                         }
                     ?>
             </table>
