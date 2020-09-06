@@ -54,18 +54,7 @@ foreach ($todayRecords as $record) {
     <script src='https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js'> </script>
     <style>
         input {
-            width: 80%
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 90%
         }
 
         table,
@@ -73,10 +62,21 @@ foreach ($todayRecords as $record) {
         td {
             border: 1px solid black;
             text-align: center;
+            padding:5px;
+            font-size:15px;
+        }
+
+        #record-form-table th{
+            background-color: #6899e8;
+            color: white;
         }
 
         table {
             width: 100%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
 
         thead {
@@ -100,23 +100,16 @@ foreach ($todayRecords as $record) {
     <?php include 'navbar.php'; ?>
 
 
-    <div class="pricing-header text-center">
+    <div class="pricing-header text-center" style="margin-bottom:20px">
         <h1 class="display-4">Watch Your Money</h1>
     </div>
-    <hr>
-    <div id='function' style='display: flex;justify-content: space-around;'>
-        <div id='bookkeeping-button'>
-            <button class="btn btn-lg btn-block btn-primary" style='font-size:15px'>Bookkeeping</button>
-        </div>
-        <div id='check-records-button'>
-            <button class="btn btn-lg btn-block btn-primary" style='font-size:15px'>Check My Records</button>
-        </div>
-    </div>
-    <hr>
+
     <div id='main-content' style='width:100%'>
-        <div id='left-content' style='width:50%;display:inline-table;margin-top:20px'>
+        <div id='left-content' style='width:49%;display:inline-table;margin-top:20px;margin-left:1%'>
             <div id='bookkeeping-input-expense' style='width:100%;'>
-                <h2> Input Your Expense</h2>
+                <div class="pricing-header text-center"> 
+                    <h4> Input Your Expense</h4>
+                </div>
                 <form id='record-form' action='bookkeeping-page.php' method='POST'>
                     <table id='record-form-table'>
                         <thead>
@@ -134,12 +127,14 @@ foreach ($todayRecords as $record) {
                             </tr>
                         </tbody>
                     </table>
-                    <button id='add-expense' style='margin:5px;position:absolute;right:50%'>Add Expense</button>
+                    <button id='add-expense' style='margin:5px;position:absolute;right:50%;font-size:12px' class="btn btn-lg btn-primary" >Add Expense</button>
                 </form>
             </div>
 
             <div id='bookkeeping-input-income' style='width:100%;margin-top:50px'>
-                <h2> Input Your Income</h2>
+                <div class="pricing-header text-center"> 
+                    <h4> Input Your Income</h4>
+                </div>
                 <form id='record-form' action='bookkeeping-page.php' method='POST'>
                     <table id='record-form-table'>
                         <thead>
@@ -157,13 +152,19 @@ foreach ($todayRecords as $record) {
                             </tr>
                         </tbody>
                     </table>
-                    <button id='add-income' style='margin:5px;position:absolute;right:50%'>Add Income</button>
+                    <button id='add-income' style='margin:5px;position:absolute;right:50%;font-size:12px' class="btn btn-lg btn-primary">Add Income</button>
                 </form>
             </div>
 
             <div id='daily-summary' style='margin-top:50px'>
-                <h2>Daily Summary</h2>
-                <table id='summary-table' style='font-size:large;width:60%;margin-left: auto;margin-right: auto;'>
+                <div class="pricing-header text-center"> 
+                    <h4>Daily Summary</h4>
+                </div>
+                <table id='summary-table' style='font-size:large;width:60%;margin-left: auto;margin-right: auto; margin-top:20px'>
+                    <tr style='background-color:#6899e8;color:white'>
+                        <th>Info</th>
+                        <th style='text-align:right'>Value</th>
+                    </tr>
                     <tr>
                         <th>Date</th>
                         <td><?= $date ?></td>
@@ -181,23 +182,30 @@ foreach ($todayRecords as $record) {
                         <td>$&nbsp;&nbsp;<?= $summary['income']['total'] - $summary['expense']['total'] ?></td>
                     </tr>
                 </table>
-
+                
+            </div>
+            <div id='check-record' style='margin-top:10px;text-align:center'>
+                <button class="btn btn-lg btn-primary" style="font-size:15px;">Check Past Records</button>
             </div>
         </div>
         <div id='right-content' style='width:45%;display:inline-table;margin-left:3%'>
-            <h2>Proportion of Expenses and Income by Category</h2>
+            <div class="pricing-header text-center">    
+                <h4>Proportion by Category</h4>
+            </div>
             <div id='daily-chart' style='width:100%'>
                 <table style='border:0px;width:100%'>
                     <tr>
                         <td style='border:0px;'>
+                            <p id='expense-distribution-placeholder'>No expense record added</p>
                             <canvas id="expense-distribution" width="300px" height="300px"></canvas>
                         </td>
                     </tr>
                     <tr>
-                        <td style='border:0px;'></td>
+                        <td style='border:0px;background-color:white'></td>
                     </tr>
                     <tr>
                         <td style='border:0px;'>
+                            <p id='income-distribution-placeholder'>No income record added</p>
                             <canvas id="income-distribution" width="300px" height="300px"></canvas>
                         </td>
                     </tr>
@@ -214,58 +222,64 @@ foreach ($todayRecords as $record) {
     var colourCode = ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF", "#B10DC9", "#FFDC00", "#001f3f", "#39CCCC", "#01FF70", "#85144b", "#F012BE", "#3D9970", "#111111", "#AAAAAA"];
 
     var expenseArray = <?= json_encode($summary['expense']) ?>;
-    delete expenseArray['total'];
-    new Chart(document.getElementById("expense-distribution"), {
-        //type: 'polarArea',
-        type: 'doughnut',
-        data: {
+    if(expenseArray['total']>0){
+        $("#expense-distribution-placeholder").hide();
+        delete expenseArray['total'];
+        new Chart(document.getElementById("expense-distribution"), {
+            //type: 'polarArea',
+            type: 'doughnut',
+            data: {
 
-            labels: Object.keys(expenseArray),
-            datasets: [{
-                label: "Income Proportion",
-                data: Object.values(expenseArray),
-                backgroundColor: colourCode
-            }]
-        },
-        options: {
-            maintainAspectRatio: false,
-            legend: {
-                display: true
+                labels: Object.keys(expenseArray),
+                datasets: [{
+                    label: "Income Proportion",
+                    data: Object.values(expenseArray),
+                    backgroundColor: colourCode
+                }]
             },
-            title: {
-                display: true,
-                text: "Source of Today's Income by Category",
-                aspectRatio: 1
+            options: {
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: "Source of Today's Income by Category",
+                    aspectRatio: 1
 
+                }
             }
-        }
-    });
+        })
+    };
 
     var incomeArray = <?= json_encode($summary['income']) ?>;
-    delete incomeArray['total'];
-    new Chart(document.getElementById("income-distribution"), {
-        //type: 'polarArea',
-        type: 'doughnut',
-        data: {
+    if(incomeArray['total']>0){
+        $("#income-distribution-placeholder").hide();
+        delete incomeArray['total'];
+        new Chart(document.getElementById("income-distribution"), {
+            //type: 'polarArea',
+            type: 'doughnut',
+            data: {
 
-            labels: Object.keys(incomeArray),
-            datasets: [{
-                label: "Expenses Proportion",
-                data: Object.values(incomeArray),
-                backgroundColor: colourCode
-            }]
-        },
-        options: {
-            maintainAspectRatio: false,
-            legend: {
-                display: true
+                labels: Object.keys(incomeArray),
+                datasets: [{
+                    label: "Expenses Proportion",
+                    data: Object.values(incomeArray),
+                    backgroundColor: colourCode
+                }]
             },
-            title: {
-                display: true,
-                text: "Source of Today's Expenses by Category",
-                aspectRatio: 1
+            options: {
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                title: {
+                    display: true,
+                    text: "Source of Today's Expenses by Category",
+                    aspectRatio: 1
 
+                }
             }
-        }
-    });
+        });
+    }
 </script>
