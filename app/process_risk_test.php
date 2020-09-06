@@ -37,7 +37,7 @@ if ($score > 20) {
 <html>
 
 <head>
-    <title>Risk Test Result</title>
+    <title> The Millionnials </title>
 </head>
 
 <body>

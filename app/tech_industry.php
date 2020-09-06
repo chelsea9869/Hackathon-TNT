@@ -24,8 +24,6 @@ th, td {
   padding: 15px;
 }
 
-
-
 th {
   background-color: #6899e8;
   color: white;

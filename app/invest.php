@@ -7,18 +7,21 @@
 
     <title> The Millionnials </title>
 
-    <!-- local style sheet -->
-    <link href="style.css" rel="stylesheet">
-
+    <style>
+        .display-5 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 1.2
+        }
+    </style>
 </head>
 
 <body>
 
     <?php include "navbar.php"; ?>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4"></h1>
-        <p class="lead">Upgrade to Unlock Investment Simulation</p>
+    <div class="pricing-header text-center" style='margin-bottom:50px;margin-top:50px'>
+        <h1 class="display-5">Upgrade to Unlock Investment Simulation</h1>
     </div>
 
     <div class="container">

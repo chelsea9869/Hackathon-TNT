@@ -53,7 +53,7 @@ foreach ($todayRecords as $record) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Your Money</title>
+    <title> The Millionnials </title>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src='https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js'> </script>

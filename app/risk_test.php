@@ -2,9 +2,7 @@
 <html lang="en">
 <!-- <link rel="stylesheet" href="styles.css"> -->
 <head>
-  <title>
-    Financial Risk Tolerance Assessment
-  </title>
+  <title> The Millionnials </title>
   <style>
     .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
   </style>

@@ -21,7 +21,7 @@
 ?>
 
 <head>
-
+  <title> The Millionnials </title> 
   <style type="text/css">
     .centerDiv
     {
