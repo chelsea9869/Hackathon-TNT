@@ -1,6 +1,5 @@
 <?php
 
-$home_page = "index.php";
 echo '
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -8,7 +7,7 @@ echo '
 
 
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href=$home_page" src="img/logo.jpg" alt="" width="180" height="54"> </img>
+    <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href=\'index.php\'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Features</a>
         <a class="p-2 text-dark" href="#">Support</a>
