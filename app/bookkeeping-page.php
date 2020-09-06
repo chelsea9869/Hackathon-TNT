@@ -112,14 +112,16 @@ foreach ($todayRecords as $record) {
     </div>
 
 
-    <h1>Watch Your Money</h1>
+    <div class="pricing-header text-center">
+        <h1 class="display-4">Watch Your Money</h1>
+    </div>
     <hr>
     <div id='function' style='display: flex;justify-content: space-around;'>
         <div id='bookkeeping-button'>
-            <button disabled="disabled">Bookkeeping</button>
+            <button class="btn btn-lg btn-block btn-primary" style='font-size:15px'>Bookkeeping</button>
         </div>
         <div id='check-records-button'>
-            <button disabled="disabled">Check My Records</button>
+            <button class="btn btn-lg btn-block btn-primary" style='font-size:15px'>Check My Records</button>
         </div>
     </div>
     <hr>

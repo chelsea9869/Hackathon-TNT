@@ -8,7 +8,7 @@ class BookkeepingDAO
         $conn_manager = new ConnectionManager();
         $conn = $conn_manager->getConnection();
         
-        $sql = 'SELECT * FROM Bookkeeping WHERE username=:username AND date=:date';
+        $sql = 'SELECT * FROM bookkeeping WHERE username=:username AND date=:date';
         $stmt = $conn->prepare($sql);
         @$stmt->bindParam(':username', $username, PDO::PARAM_STR);
         @$stmt->bindParam(':date', $date, PDO::PARAM_STR);
@@ -41,7 +41,7 @@ class BookkeepingDAO
         $conn_manager = new ConnectionManager();
         $conn = $conn_manager->getConnection();
         
-        $sql = 'INSERT INTO Bookkeeping (username,date, item, type, category, amount) VALUES (:username,:date, :item, :type, :category, :amount)';
+        $sql = 'INSERT INTO bookkeeping (username,date, item, type, category, amount) VALUES (:username,:date, :item, :type, :category, :amount)';
         $stmt = $conn->prepare($sql);
         @$stmt->bindParam(':username', $username, PDO::PARAM_STR);
         @$stmt->bindParam(':date', $date, PDO::PARAM_STR);
