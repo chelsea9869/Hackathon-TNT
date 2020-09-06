@@ -47,16 +47,18 @@ $interest = $_SESSION['interest']
       ?>
     </p>
     <p>
-      Oops! Recession is happening now and the economy is bad. Savings annual interest rate has dropped to 0.5%!
+        Oops! Recession is happening now and the economy is bad. Savings annual interest rate has dropped to 0.5%!
+        You have also successfully repaid all your tuition fee loan!
     </p>
     <p>
-
       <?php
+            // Tuition Fee Loan
+            $loan = 10000 * (1.0475) ** 5;
 
-      $current_balance = $balance * (1 + $interest / 100) ** years;
-      $current_mat_cnt = $maturity_cnt - $years;
-
-      echo "
+            $current_balance = $balance * (1 + $interest) ** years - $loan;
+            $current_mat_cnt = $maturity_cnt - $years;
+            
+            echo "
             
                 Your current savings balance is: $current_balance </br>
                 Your bonds have $current_mat_cnt years to mature </br>
@@ -66,6 +68,7 @@ $interest = $_SESSION['interest']
       $_SESSION['age'] = $age;
       $_SESSION['balance'] = $current_balance;
       $_SESSION['maturity_count'] = $current_mat_cnt;
+      $_SESSION['interest'] = 0.05;
 
       ?>
 

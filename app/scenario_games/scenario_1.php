@@ -49,8 +49,8 @@ $interest = $_SESSION['interest']
       ?>
     </p>
     <p>
-      Congratulations on your recent graduation from SMU! It is time for you to start repaying your tuition fee loan. You have opted to
-      repay your loans at one shot. You have to pay $10,000 within 5 years with annual interest of 4.75%
+        Congratulations on your recent graduation from SMU! It is time for you to start repaying your tuition fee loan. You have opted to 
+        repay your loans at one shot. You have to pay $10,000 within 5 years with annual interest of 4.75%, compounded every 5 years.
     </p>
     <p>
 

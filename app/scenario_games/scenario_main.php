@@ -2,6 +2,7 @@
 
 require_once '../include/common.php';
 session_unset;
+
 $product_list = [
     "Bonds" => "A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental).
     Bond Information, Face Value: $1000, Interest 5%, Matruity Date: 10 years later",
