@@ -40,6 +40,7 @@
             // bonds
             // Principle * (1 + interest) ** years at par value
             $bonds = ($bonds_percent / 100) * 50000 * (1 + 0.1) ** $years; 
+            $_SESSION['bondsfinal'] = $bonds;
 
             echo "
                 ... 5 years later, you are now $age years old
@@ -80,7 +81,7 @@
 
             if ($current_balance >= 0) {
               echo "      
-                <form action='final_report.php' method='post'>
+                <form action='scenario_final_report.php' method='post'>
                     <input type='submit' value='Next'>
                 </form>
             "; 
