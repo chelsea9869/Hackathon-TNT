@@ -45,11 +45,11 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Understand your risk tolerance</li>
-                        <li>Scenario Game</li>
+                        <li>Interactive Games</li>
+                        <li>Scenario Simulation</li>
                         <li>Financial Planning</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_games/scenario_main.php'">Start a Game</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_games/scenario_main.php'">Start Gaming</button>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -59,11 +59,11 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
+                        <li>Understand your risk tolerance</li>
                         <li>Trading Simulation</li>
-                        <li>Share with your friends</li>
                         <li>Learn and earn</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start Simulation</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start Growing</button>
                 </div>
             </div>
         </div>
