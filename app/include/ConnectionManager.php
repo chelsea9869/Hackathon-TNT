@@ -3,10 +3,10 @@
 class ConnectionManager {
    
     public function getConnection() {
-	$password = "";  
+	    $password = "";  
         if(strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN'){
-	    $password = 'ykJ7OaMCEexF';
-	}
+	        $password = 'ykJ7OaMCEexF';
+	    }
         $host = "localhost";
         $username = "root";
         $dbname = "hackathon";
