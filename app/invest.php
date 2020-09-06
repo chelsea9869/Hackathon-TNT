@@ -7,9 +7,9 @@
 
     <title> The Millionnials </title>
 
-    <!-- local style sheet -->
-    <link href="style.css" rel="stylesheet">
-
+    <style>
+      .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
+  </style>
 </head>
 
 
@@ -20,20 +20,19 @@
 
 <body>
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal">The Millionnials</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#">Features</a>
-            <a class="p-2 text-dark" href="#">Support</a>
-            <a class="p-2 text-dark" href="#">Donate</a>
-            <a class="p-2 text-dark" href="#">Contact</a>
-        </nav>
-        <a class="btn btn-outline-primary" href="#">Log in</a>
-    </div>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href='index.php'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Features</a>
+      <a class="p-2 text-dark" href="#">Support</a>
+      <a class="p-2 text-dark" href="#">Donate</a>
+      <a class="p-2 text-dark" href="#">Contact</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Log in</a>
+  </div>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4"></h1>
-        <p class="lead">Upgrade to Unlock Investment Simulation</p>
+    <div class="pricing-header text-center" style='margin-bottom:50px;margin-top:50px'>
+        <h1 class="display-5">Upgrade to Unlock Investment Simulation</h1>
     </div>
 
     <div class="container">

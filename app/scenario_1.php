@@ -24,7 +24,7 @@ $interest = $_SESSION['interest'];
 ?>
 
 <head>
-
+  <title> The Millionnials </title>
   <style type="text/css">
     .centerDiv {
       width: 60%;
