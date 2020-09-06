@@ -5,6 +5,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+  <h5 class="my-0 mr-md-auto font-weight-normal">The Millionnials</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="#">Features</a>
+    <a class="p-2 text-dark" href="#">Support</a>
+    <a class="p-2 text-dark" href="#">Donate</a>
+    <a class="p-2 text-dark" href="#">Contact</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="#">Log in</a>
+</div>
+
 <div class="container">
   <header class="header">
     <h1 id="title" class="text-center">Financial Risk Tolerance Test</h1>
@@ -50,32 +61,32 @@
     <div class="form-group">
       <p>4. If you unexpectedly received $20,000 to invest, what would you do?</p>
       <label>
-        <input name="q3" value="1" type="radio" class="input-radio" />Deposit it in a bank account, money market account, or an insured CD</label>
+        <input name="q4" value="1" type="radio" class="input-radio" />Deposit it in a bank account, money market account, or an insured CD</label>
       <label>
-        <input name="q3" value="2" type="radio" class="input-radio" />Invest it in safe high quality bonds or bond mutual funds
+        <input name="q4" value="2" type="radio" class="input-radio" />Invest it in safe high quality bonds or bond mutual funds
       </label>
-      <label><input name="q3" value="3" type="radio" class="input-radio" />Invest it in stocks or stock mutual funds</label>
+      <label><input name="q4" value="3" type="radio" class="input-radio" />Invest it in stocks or stock mutual funds</label>
     </div>
 
     <div class="form-group">
       <p>5. In terms of experience, how comfortable are you investing in stocks or stock mutual funds?</p>
       <label>
-        <input name="q3" value="1" type="radio" class="input-radio" />Not at all comfortabl</label>
+        <input name="q5" value="1" type="radio" class="input-radio" />Not at all comfortabl</label>
       <label>
-        <input name="q3" value="2" type="radio" class="input-radio" />Somewhat comfortable
+        <input name="q5" value="2" type="radio" class="input-radio" />Somewhat comfortable
       </label>
-      <label><input name="q3" value="3" type="radio" class="input-radio" />Very comfortable</label>
+      <label><input name="q5" value="3" type="radio" class="input-radio" />Very comfortable</label>
     </div>
 
     <div class="form-group">
       <p> 6. When you think of the word "risk" which of the following words comes to mind first? </p>
       <label>
-        <input name="q3" value="1" type="radio" class="input-radio" />Loss</label>
+        <input name="q6" value="1" type="radio" class="input-radio" />Loss</label>
       <label>
-        <input name="q3" value="2" type="radio" class="input-radio" />Uncertainty
+        <input name="q6" value="2" type="radio" class="input-radio" />Uncertainty
       </label>
-      <label><input name="q3" value="3" type="radio" class="input-radio" /> Opportunity </label>
-      <label><input name="q3" value="4" type="radio" class="input-radio" /> Thrill </label>
+      <label><input name="q6" value="3" type="radio" class="input-radio" /> Opportunity </label>
+      <label><input name="q6" value="4" type="radio" class="input-radio" /> Thrill </label>
     </div>
 
     <div class="form-group">
@@ -89,6 +100,6 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body> -->
 
-  </div>
+</div>
 
 </html>
