@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once '../include/common.php';
 session_unset;
@@ -21,22 +21,25 @@ $_SESSION['maturity_count'] = 10;
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safeguard Your Money</title>
 </head>
 
-<div id='main-content' >
-        <div id='portfolio'>
+<?php include 'navbar.php'; ?>
+
+<div id='main-content'>
+    <div id='portfolio'>
         <form name='portfolio-form' action="scenario_1.php" method="post">
 
-            
+
 
             <table id='portfolio-form-table' border="1px" width='50%'>
                 <thead>
                     <tr>
-                        <th colspan="3">Your Simulated Financial Information</th>  
+                        <th colspan="3">Your Simulated Financial Information</th>
                     </tr>
                 </thead>
 
@@ -51,8 +54,8 @@ $_SESSION['maturity_count'] = 10;
                 <tr>
                     <td>Annual Savings Interest:</td>
                     <td colspan="2">1.00%</td>
-                </tr>  
-                
+                </tr>
+
                 <thead>
                     <tr>
                         <th>Product Name</th>
@@ -62,26 +65,27 @@ $_SESSION['maturity_count'] = 10;
                 </thead>
                 <tbody>
                     <?php
-                        foreach($product_list as $prod=>$desc) {
-                            
-                            echo "
+                    foreach ($product_list as $prod => $desc) {
+
+                        echo "
                             <tr>
                                 <td>$prod</td>
                                 <td>$desc</td>
                                 <td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>
                             ";
-                            // if ($prod != 'CPF') {
-                            //     echo "<td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>";
-                            // } else {
-                            //     echo "<td><input type='number' name='$prod-percent' min='20' max='100' step='1'>%</td></tr>";
-                            // }
-                        }
+                        // if ($prod != 'CPF') {
+                        //     echo "<td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>";
+                        // } else {
+                        //     echo "<td><input type='number' name='$prod-percent' min='20' max='100' step='1'>%</td></tr>";
+                        // }
+                    }
                     ?>
             </table>
-                
-                <input type="submit" name="Proceed to Scenario Game">
 
-            </form>
-        </div>
+            <input type="submit" name="Proceed to Scenario Game">
+
+        </form>
     </div>
+</div>
+
 </html>
