@@ -16,7 +16,7 @@
 <body class="landingPage">
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal">The Millionnials</h5>
+        <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href='index.php'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
         <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-dark" href="#">Features</a>
             <a class="p-2 text-dark" href="#">Support</a>
@@ -44,7 +44,7 @@
                         <li>Bookkeeping</li>
                         <li>Know where you spend</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='bookkeeping-page.php'">Start Bookkeeping</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='bookkeeping-page.php'">Start Bookkeeping</button>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -58,7 +58,7 @@
                         <li>Scenario Game</li>
                         <li>Financial Planning</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start a Game</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_games/scenario_main.php'">Start a Game</button>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -72,7 +72,7 @@
                         <li>Share with your friends</li>
                         <li>Learn and earn</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary">Start Simulation</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start Simulation</button>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <div class="col-12 col-md">
-                    <img class="mb-2" src="img/logo.jpg" alt="" width="140" height="40">
+                    <img class="mb-2" src="img/logo.jpg" alt="" width="140" height="40"> </img>
                     <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
                 </div>
                 <div class="col-6 col-md">
@@ -123,16 +123,14 @@
 
                 <div class="col-sm-4 bg-color">
                 <a class="btn btn-primary" href="bookkeeping-page.php" role=button>Watch Your Money</a>
+                    
                 </div>
-
                 <div class="col-sm">
-                <a class="btn btn-primary" href="scenario_games/scenario_main.php" role=button>Safeguard Your Money</a>
+                <button type="button" class="btn btn-primary">Safeguard Your Money</button>
                 </div>
-                
                 <div class="col-sm">
                 <button type="button" class="btn btn-primary">Grow Your Money</button>
                 </div>
-            
             </div>
         </div>
     </div> -->

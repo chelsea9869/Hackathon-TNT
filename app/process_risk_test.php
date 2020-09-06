@@ -45,7 +45,7 @@ if ($score > 20) {
 
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal">The Millionnials</h5>
+    <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href='index.php'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
         <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-dark" href="#">Features</a>
             <a class="p-2 text-dark" href="#">Support</a>
@@ -59,7 +59,7 @@ if ($score > 20) {
         <div class="jumbotron mt-3">
             <h1>Your risk tolerance level is: <?php echo "$result" ?></h1>
             <p class="lead"><?php echo "$explaination" ?> </p>
-            <a class="btn btn-lg btn-primary" href="scenario_game.php" role="button">Start Scenario Game &raquo;</a>
+            <a class="btn btn-lg btn-primary" href="grow_your_money.php" role="button">Grow Your Money &raquo;</a>
         </div>
     </div>
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
