@@ -1,5 +1,5 @@
 <?php
-
+include '../navbar.php';
 require_once '../include/common.php';
 session_unset();
 

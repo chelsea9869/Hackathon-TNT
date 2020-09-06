@@ -2,7 +2,7 @@
 <html >
 
 <?php
-    
+    include '../navbar.php';
     require_once '../include/common.php';
 
     $years = 3;
@@ -25,7 +25,7 @@
     .centerDiv
     {
       width: 60%;
-      height:200px;
+      height:auto;
       margin: 0 auto;
       background-color:#D3D3D3 ;
     }
@@ -47,8 +47,8 @@
         ?>
     </p>
     <p>
-        Yay! Your bonds have just matured! The lump sum of <?php echo $bonds; ?> is saved to your savings account! <br>
-        However, you have just experienced an accident.
+        Yay! Your bonds have just matured! The lump sum of <?php echo $bonds; ?> is saved to your savings account! <br><br>
+        However, you have just experienced an accident. <br><br>
         <?php 
           
           if($insurance_percent >= 10) {
@@ -69,7 +69,7 @@
             $current_mat_cnt = $maturity_cnt - $years;
           
             echo "
-            
+            <br>
                 Your current savings balance is: $current_balance </br>
             
             ";
