@@ -29,7 +29,9 @@
       height:200px;
       margin: 0 auto;
       background-color:#6899e8 ;
+      opacity: 0.4
     }
+    h3 {text-align: center}
   </style>
 
 </head>
