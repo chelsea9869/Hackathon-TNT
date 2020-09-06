@@ -47,7 +47,7 @@
 
     .button {
       border: none;
-      color: auto;
+      color: black;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
@@ -141,7 +141,11 @@
     </p>
 
     <p>
-        
+
+        <form action='scenario_main.php' method='post'>
+          <input type='submit' value='Go Back to Main Page'>
+        </form>
+
         <?php
           
             // bonds
