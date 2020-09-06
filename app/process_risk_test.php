@@ -1,6 +1,7 @@
 <?PHP
 require_once 'include/common.php';
-$username='Alice very Old';
+$username = $_SESSION['username'];
+
 $userDao = new UserDAO();
     
 $profile_explanation=[

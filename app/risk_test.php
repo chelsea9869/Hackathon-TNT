@@ -1,7 +1,8 @@
 <?php
   require_once 'include/common.php';
 
-  $username='Alice very Old';
+  $username = $_SESSION['username'];
+
   $userDao = new UserDAO();
   $profile=$userDao->retrieveProfile($username);
   
