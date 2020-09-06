@@ -1,5 +1,5 @@
 <?php 
-require_once 'include/common';
+require_once 'include/common.php';
 $_SESSION['username'] = 'Alice Young';
 ?>
 <html>

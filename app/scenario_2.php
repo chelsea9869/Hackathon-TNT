@@ -73,7 +73,6 @@ $interest = $_SESSION['interest']
             <br>
                 Your current savings balance is: $$current_balance </br>
                 Your bonds have $current_mat_cnt years to mature </br>
-            
             ";
 
             $_SESSION['age'] = $age;
