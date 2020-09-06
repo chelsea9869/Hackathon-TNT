@@ -1,6 +1,6 @@
 <?php
-include '../navbar.php';
-require_once '../include/common.php';
+include 'navbar.php';
+require_once 'include/common.php';
 session_unset();
 
 $product_list = [
@@ -27,8 +27,6 @@ $_SESSION['maturity_count'] = 10;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safeguard Your Money</title>
 </head>
-
-<?php include 'navbar.php'; ?>
 
 <div id='main-content'>
     <div id='portfolio'>

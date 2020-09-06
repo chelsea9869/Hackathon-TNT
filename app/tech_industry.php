@@ -30,6 +30,30 @@ th {
   background-color: #6899e8;
   color: white;
 }
+
+.CellWithComment{
+  position:relative;
+}
+
+.CellComment{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:1px;
+  background-color:white;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+  padding:3px;
+  color:black; 
+  top:5px; 
+  left:5px;
+}
+
+.CellWithComment:hover span.CellComment{
+  display:block;
+}
+
 </style>
      
 </head>
@@ -131,9 +155,24 @@ $queryString = http_build_query([
     <th>Last Price</th>
     <th>Change</th>
     <th>Change %</th>
-    <th>Volumn</th>
-    <th>Market Cap</th>
-    <th>Beta</th>
+    
+    <th class="CellWithComment"> <u>Volume</u>
+        <span class="CellComment"> <h6>Volume measures the number of shares traded in a stock or contracts traded in futures or options.</h6></span>
+    </th>
+
+    <th class="CellWithComment"> <u>P/E Ratio</u>
+        <span class="CellComment"> <h6>The price-earnings ratio (P/E ratio) relates a company's share price to its earnings per share.
+A high P/E ratio could mean that a company's stock is over-valued, or else that investors are expecting high growth rates in the future.</h6></span>
+    </th>
+
+    <th class="CellWithComment"> <u>Market Cap</u>
+        <span class="CellComment"> <h6>Market capitalization refers to how much a company is worth as determined by the stock market.</h6></span>
+    </th>
+    
+    <th class="CellWithComment"> <u>Beta</u>
+        <span class="CellComment"> <h6>Beta is a measure of the volatility of the stock compared to the market. Higher beta indicates higher risk.</h6></span>
+    </th>
+
   </tr>
 
   <tr>
@@ -143,6 +182,7 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['MSFT']['last'])?></td>
     <td><?php echo ($tickerDic['MSFT']['change'])?></td>
     <td>  <?php echo ($tickerDic['MSFT']['percentage'])?> </td>
+    <td>37.20</td>
     <td>56.78M</td>
     <td>1728.44B</td>
     <td>0.8</td>
@@ -154,9 +194,10 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['AAPL']['last'])?></td>
     <td><?php echo ($tickerDic['AAPL']['change'])?></td>
     <td>  <?php echo ($tickerDic['AAPL']['percentage'])?> </td>
-    <td>56.78M</td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td>36.70</td>
+    <td>332.61M</td>
+    <td>2.069T</td>
+    <td>1.28</td>
   </tr>
 
   <tr>
@@ -165,8 +206,10 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['AMZN']['last'])?></td>
     <td><?php echo ($tickerDic['AMZN']['change'])?></td>
     <td> <?php echo ($tickerDic['AMZN']['percentage'])?> </td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td>126.54</td>
+    <td>8.6M</td>
+    <td>1.65T</td>
+    <td>1.32</td>
   </tr>
 
   
@@ -176,9 +219,10 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['FB']['last'])?></td>
     <td><?php echo ($tickerDic['FB']['change'])?></td>
     <td> <?php echo ($tickerDic['FB']['percentage'])?> </td>
-    <td>56.78M</td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td>34.57</td>
+    <td>29.81M</td>
+    <td>805.447B</td>
+    <td>1.26</td>
   </tr>
 
   <tr>
@@ -187,9 +231,10 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['BABA']['last'])?></td>
     <td><?php echo ($tickerDic['BABA']['change'])?></td>
     <td> <?php echo ($tickerDic['BABA']['percentage'])?> </td>
-    <td>56.78M</td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td>80.47</td>
+    <td>15.727M</td>
+    <td>790.576B</td>
+    <td>1.56</td>
   </tr>
 
   <tr>
@@ -198,9 +243,10 @@ $queryString = http_build_query([
     <td><?php echo ($tickerDic['TSLA']['last'])?></td>
     <td><?php echo ($tickerDic['TSLA']['change'])?></td>
     <td> <?php echo ($tickerDic['TSLA']['percentage'])?> </td>
-    <td>56.78M</td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td>1,083.73</td>
+    <td>110.321M</td>
+    <td>389.794B</td>
+    <td>1.64</td>
   </tr>
 
   <tr>
@@ -208,10 +254,11 @@ $queryString = http_build_query([
     <td><a href='individual_Stock_Page.php?Ticker=PYPL'>PYPL</td>
     <td><?php echo ($tickerDic['PYPL']['last'])?></td>
     <td><?php echo ($tickerDic['PYPL']['change'])?></td>
-    <td> <?php echo ($tickerDic['PYPL']['percentage'])?> </td>
-    <td>56.78M</td>
-    <td>1728.44B</td>
-    <td>?</td>
+    <td><?php echo ($tickerDic['PYPL']['percentage'])?> </td>
+    <td>88.04 </td>
+    <td>17.1M</td>
+    <td>225.086B</td>
+    <td>1.14</td>
   </tr>
 
 
