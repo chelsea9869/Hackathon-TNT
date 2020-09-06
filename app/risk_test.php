@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- <link rel="stylesheet" href="styles.css"> -->
-
+<head>
+  <title>
+    Financial Risk Tolerance Assessment
+  </title>
+  <style>
+    .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
+  </style>
+</head>
 <?php include 'navbar.php'; ?>
 
 <div class="pricing-header text-center">
-  <h1 class="display-4">Financial Risk Tolerance Test</h1>
+  <h1 class="display-5">Financial Risk Tolerance Assessment</h1>
 </div>
 <br></br>
 <div class="container">
@@ -24,10 +31,10 @@
 
     <div class="form-group">
       <p><strong>2. You are on a TV game show and can choose one of the following. Which would you take?</strong></p>
-      <label><input name="qn2" value="1" type="radio" class="input-radio" /> $1,000 in cash</label><br>
-      <label><input name="qn2" value="2" type="radio" class="input-radio" /> A 50% chance at winning $5,000</label><br>
-      <label><input name="qn2" value="3" type="radio" class="input-radio" /> A 25% chance at winning $10,000</label><br>
-      <label><input name="qn2" value="4" type="radio" class="input-radio" /> A 5% chance at winning $100,000</label><br>
+      <label><input name="q2" value="1" type="radio" class="input-radio" /> $1,000 in cash</label><br>
+      <label><input name="q2" value="2" type="radio" class="input-radio" /> A 50% chance at winning $5,000</label><br>
+      <label><input name="q2" value="3" type="radio" class="input-radio" /> A 25% chance at winning $10,000</label><br>
+      <label><input name="q2" value="4" type="radio" class="input-radio" /> A 5% chance at winning $100,000</label><br>
     </div>
 
     <div class="form-group">

@@ -97,6 +97,8 @@ foreach ($todayRecords as $record) {
             text-align: left;
             padding-left: 5px;
         }
+
+        .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
     </style>
 </head>
 
@@ -105,8 +107,8 @@ foreach ($todayRecords as $record) {
     <?php include 'navbar.php'; ?>
 
 
-    <div class="pricing-header text-center" style="margin-bottom:20px">
-        <h1 class="display-4">Watch Your Money</h1>
+    <div class="pricing-header text-center" style="margin-bottom:30px">
+        <h1 class="display-5">Watch Your Money</h1>
     </div>
 
     <div id='main-content' style='width:100%'>
