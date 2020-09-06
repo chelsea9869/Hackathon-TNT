@@ -2,7 +2,7 @@
 <html>
 
 <?php
-
+include '../navbar.php';
 require_once '../include/common.php';
 
 $years = 2;
@@ -19,7 +19,7 @@ $balance = $_SESSION['balance'];
 $interest = $_SESSION['interest'];
 
 // echo $_SESSION["cpf"];
-echo $_SESSION["insurance"];
+// echo $_SESSION["insurance"];
 
 ?>
 
@@ -28,7 +28,7 @@ echo $_SESSION["insurance"];
   <style type="text/css">
     .centerDiv {
       width: 60%;
-      height: 200px;
+      height: auto;
       margin: 0 auto;
       background-color: #D3D3D3;
     }
@@ -61,7 +61,7 @@ echo $_SESSION["insurance"];
 
       $current_mat_cnt = $maturity_cnt - $years;
       echo "
-            
+      <br><br>
                 Your current savings balance is: $current_balance </br>
                 Your bonds have $current_mat_cnt years to mature </br>
             

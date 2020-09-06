@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-
+include '../navbar.php';
 require_once '../include/common.php';
 
 $years = 5;
@@ -21,7 +21,7 @@ $interest = $_SESSION['interest']
   <style type="text/css">
     .centerDiv {
       width: 60%;
-      height: 200px;
+      height: auto;
       margin: 0 auto;
       background-color: #D3D3D3;
     }
@@ -54,7 +54,7 @@ $interest = $_SESSION['interest']
             $current_mat_cnt = $maturity_cnt - $years;
             
             echo "
-            
+            <br><br>
                 Your current savings balance is: $current_balance </br>
                 Your bonds have $current_mat_cnt years to mature </br>
             
