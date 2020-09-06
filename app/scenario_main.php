@@ -26,18 +26,39 @@ $_SESSION['maturity_count'] = 10;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> The Millionnials </title>
+    <style>
+        thead{
+            font-size:15px;
+            background-color:#92b9f7;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            padding:10px;
+            font-size:15px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
+
+    </style>
 </head>
 
 <div id='main-content'>
     <div id='portfolio'>
+    <div class="pricing-header text-center" style="margin-bottom:30px">
+        <h1 class="display-5">Safeguard Your Money</h1>
+    </div>
         <form name='portfolio-form' action="scenario_1.php" method="post">
 
-
-
-            <table id='portfolio-form-table' border="1px" width='50%'>
-                <thead>
+            <table id='portfolio-form-table' border='1px' style='width:30%;height:15%;text-align:center;margin:auto'>
+                <thead> 
                     <tr>
-                        <th colspan="3">Your Simulated Financial Information</th>
+                        <th colspan="3"  style='padding:10px;height:5%'>Your Simulated Financial Information</th>
                     </tr>
                 </thead>
 
@@ -53,12 +74,14 @@ $_SESSION['maturity_count'] = 10;
                     <td>Annual Savings Interest:</td>
                     <td colspan="2">1.00%</td>
                 </tr>
-
+        </table>
+        <br>
+            <table id='portfolio-form-table' border='1px' style='width:70%;height:30%;text-align:center;margin:auto;padding:20px'>
                 <thead>
                     <tr>
-                        <th>Product Name</th>
-                        <th>Product Descriptions</th>
-                        <th>Percentage of Investment</th>
+                        <th style='padding:10px;'>Product Name</th>
+                        <th style='padding:10px;'>Product Descriptions</th>
+                        <th style='padding:10px;'>Percentage of Investment</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,9 +90,9 @@ $_SESSION['maturity_count'] = 10;
 
                         echo "
                             <tr>
-                                <td>$prod</td>
-                                <td>$desc</td>
-                                <td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>
+                                <td style='width:10%'>$prod</td>
+                                <td style='padding:10px'>$desc</td>
+                                <td style='width:15%'><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>
                             ";
                         // if ($prod != 'CPF') {
                         //     echo "<td><input type='number' name='$prod-percent' min='0' max='100' step='1'>%</td></tr>";
@@ -80,8 +103,9 @@ $_SESSION['maturity_count'] = 10;
                     ?>
             </table>
             <br>
-            <input type="submit" value="Proceed to Scenario Game">
-
+            <div style="text-align:center">
+                <input type="submit" value="Proceed to Scenario Game" class="btn btn-lg btn-primary" style='font-size:15px;'>
+            </div>
         </form>
     </div>
 </div>
