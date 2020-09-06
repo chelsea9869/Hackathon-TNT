@@ -1,7 +1,6 @@
 <?php
 require_once 'include/BookkeepingDAO.php';
 
-$_SESSION['username'] = 'Alice Young';
 $username = $_SESSION['username'];
 
 // for dropdown list

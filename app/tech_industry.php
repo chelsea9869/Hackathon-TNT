@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+     
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <title> The Millionnials </title>
 
     <!-- local style sheet -->
@@ -23,6 +29,8 @@ table {
 th, td {
   padding: 15px;
 }
+
+
 
 th {
   background-color: #92b9f7;
@@ -51,7 +59,6 @@ th {
 .CellWithComment:hover span.CellComment{
   display:block;
 }
-.display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
 
 </style>
      
@@ -71,6 +78,8 @@ function get_percentage($total, $number)
     return 0;
   }
 }
+
+
 
 $tickerArray = ['MSFT','AAPL','AMZN','FB','BABA','TSLA','PYPL']; 
 $tickerDic = array();
@@ -135,8 +144,21 @@ $queryString = http_build_query([
         <a class="btn btn-outline-primary" href="#">Log in</a>
 </div>
 
-<div class="pricing-header text-center" style="margin-bottom:30px;margin-top:30px">
-      <h1 class="display-5">Technology Industry</h1>
+<div class="row">
+    <div class="col-sm-8"> </div>
+    <div class="col-sm-4">
+       <div class="container">
+       <p>Goal: <mark> Nike AJ $200 </mark> Current Earnings:<mark> $0 </mark> </p>
+       </div>
+    </div>
+</div>
+
+<div class="container">
+  
+  <header class="header">
+      <h1 id="title" class="text-center">Technology Industry</h1>
+      <p id="description" class="description text-center"></p>
+  </header>
 </div>
 
 <div class="container">

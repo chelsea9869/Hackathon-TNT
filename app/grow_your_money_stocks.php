@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <title> The Millionnials </title>
 
     <!-- local style sheet -->
@@ -35,12 +41,24 @@
         <a class="btn btn-outline-primary" href="#">Log in</a>
     </div>
 
-     
+    
 
+
+  <div class="row">
+    <div class="col-sm-8"> </div>
+    <div class="col-sm-4">
+       <div class="container">
+       <p>Goal <mark> Nike AJ $200 </mark> Current Earnings:<mark> $0 </mark> </p>
+       </div>
+    </div>
+  </div>
 
     <div class="pricing-header text-center" style="margin-bottom:30px;margin-top:30px;">
         <h1 class="display-5">Stock Sectors</h1>
     </div>
+
+    
+    
 
     <div class="container">
         <div class="card-deck mb-3 text-center">

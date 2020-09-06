@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html >
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/chomsky" type="text/css"/>
+<html>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/chomsky" type="text/css" />
 <?php
-    
-    include 'navbar.php';
-    require_once 'include/common.php';
 
-    $years = 3;
+include 'navbar.php';
+require_once 'include/common.php';
 
-    $insurance_percent = $_SESSION['insurance'];
-    
-    $bondsfinal = $_SESSION['bondsfinal'];
-    $maturity_cnt = $_SESSION['maturity_count'];
-    $age = $_SESSION['age']+$years;
-    $balance = $_SESSION['balance'];
-    $interest = $_SESSION['interest']
-    
-    // echo $_SESSION["cpf"];
+$years = 3;
+
+$insurance_percent = $_SESSION['insurance'];
+$bondsfinal = $_SESSION['bondsfinal'];
+$maturity_cnt = $_SESSION['maturity_count'];
+$age = $_SESSION['age'] + $years;
+$balance = $_SESSION['balance'];
+$interest = $_SESSION['interest']
 
 ?>
 
 <head>
 
   <style type="text/css">
-    .centerDiv
-    {
+    .centerDiv {
       width: 60%;
-      height:auto;
+      height: auto;
       margin: 0 auto;
-      background-color:#ADD8E6 ;
+      background-color: #ADD8E6;
       /* opacity */
     }
+
     h3 {
       text-align: center;
-      font-family: 'ChomskyRegular';
+      /* font-family: 'ChomskyRegular';
       font-weight: normal;
-      font-style: normal;
+      font-style: normal; */
     }
+
     h5 {
       text-align: center;
     }
@@ -56,132 +54,141 @@
     }
 
     .button1 {
-      background-color: #4CAF50; /* Green */
+      background-color: #4CAF50;
+      /* Green */
     }
 
     .button2 {
-      background-color: #00FF00; /* light green */
+      background-color: #00FF00;
+      /* light green */
     }
 
     .button3 {
-      background-color: #fed8b1; /* light orange */
+      background-color: #fed8b1;
+      /* light orange */
     }
 
     .button4 {
-      background-color: #DC143C; /* light red */
+      background-color: #DC143C;
+      /* light red */
     }
 
     .button5 {
-      background-color: #696969; /*  grey */
+      background-color: #696969;
+      /*  grey */
     }
-
   </style>
 
 </head>
+
 <body>
-  <div class="centerDiv">
-    <br>
-    <h3> Congratulations </h3>
-    <p> 
-        <?php 
-            echo "
-                <h5>You have completed the simulation game and successfully went through all major milestones or challenges in life.<br>
-                    Your portfolio allows you to have a great future!
-                </h5>
-            "; 
-        ?>
-        
-    </p>
 
-    <p id="tabletext">
-      Here is the summary report for your portfolio. Share the report with your friends now!
+  <div class="container">
 
-          <table class="center">
+    <div class="jumbotron mt-3">
+      <h3> Congratulations! </h3>
+
+      <br>
+      <h4>
+        <p class="text-center"> You have completed the simulation game and successfully went through all major milestones or challenges in life.<br>
+          Your portfolio allows you to have a great future! </p>
+      </h4>
+      <br>
+
+      <p id="tabletext">
+        Here is the summary report for your portfolio. Share the report with your friends now!
+
+        <table class="table" style="width:85%">
+          <thead class="thead-light">
             <tr>
-              <th>Item</th>
-              <th>Details</th>
+              <th style="text-align: center; vertical-align: middle;" scope="col">Item</th>
+              <th style="text-align: center; vertical-align: middle;" scope="col">Details</th>
             </tr>
-
+          </thead>
+          <tbody>
             <tr>
-              <td>Your final balance from savings</td>
-              <td>$<?php echo $balance; ?></td>
+              <th style="text-align: center; vertical-align: middle;" scope="row">Your final balance from savings</th>
+              <td style="text-align: center; vertical-align: middle;">$<?php echo (number_format($balance, 2)); ?></td>
             </tr>
-
             <tr>
-              <td>Total amount earned from Bonds</td>
-              <td>$<?php echo $bondsfinal; ?></td>
+              <th style="text-align: center; vertical-align: middle;" scope="row">Total amount earned from Bonds</th>
+              <td style="text-align: center; vertical-align: middle;">$<?php echo (number_format($bondsfinal, 2)); ?></td>
             </tr>
-
             <tr>
-              <td>Insurance helped you saved</td>
-              <td>$20000</td>
+              <th style="text-align: center; vertical-align: middle;" scope="row">Insurance helped you saved</th>
+              <td style="text-align: center; vertical-align: middle;">$20,000.00</td>
             </tr>
-
             <tr>
-              <td>Your portfolio rating</td>
-              <td>
-                <?php
-                  if ( $balance >= 25000) {
-                    echo "<button class='button button1'>Outstanding</button>";
-                  } elseif ($balance >= 15000) {
-                    echo "<button class='button button2'>Excellent</button>";
-                  } elseif ($balance >= 10000) {
-                    echo "<button class='button button3'>Great</button>";
-                  } elseif ($balance >= 5000) {
-                    echo "<button class='button button4'>Fair</button>";
-                  } else {
-                    echo "<button class='button button5'>Poor</button>";
-                  }
-                ?>
+              <th style="text-align: center; vertical-align: middle;" scope="row">Your portfolio rating</th>
+              <td style="text-align: center; vertical-align: middle;"> <?php
+                                                                        if ($balance >= 25000) {
+                                                                          echo '<div class="p-3 mb-2 bg-success text-white">Outstanding</div>';
+                                                                        } elseif ($balance >= 15000) {
+                                                                          echo '<div class="p-3 mb-2 bg-success text-white">Excellent</div>';
+                                                                        } elseif ($balance >= 10000) {
+                                                                          echo '<div class="p-3 mb-2 bg-success text-white">Great</div>';
+                                                                        } elseif ($balance >= 5000) {
+                                                                          echo '<div class="p-3 mb-2 bg-secondary text-white">Fair</div>';
+                                                                        } else {
+                                                                          echo '<div class="p-3 mb-2 bg-danger text-white">Poor</div>';
+                                                                        }
+
+                                                                        ?></td>
+            </tr>
+            <!-- <tr>
+              <th style="text-align: center; vertical-align: middle;" scope="row"></th>
+              <td style="text-align: right; vertical-align: middle;">
+                <a class="btn btn-lg btn-primary mr-1" href="scenario_main.php" role="button">&laquo; Play Again</a>
+
               </td>
-            </tr>
+            </tr> -->
+          </tbody>
+        </table>
+        <a class="btn btn-lg btn-primary mr-1" href="scenario_main.php" role="button">&laquo; Play Again</a>
 
-          </table>
-       
-    </p>
+      </p>
 
-    <p>
 
-        <form action='scenario_main.php' method='post'>
-          <input type='submit' value='Go Back to Main Page'>
-        </form>
+    </div>
+  </div>
 
-        <?php
-          
-            // bonds
-            // Principle * (1 + interest) ** years at par value
-          //   $bonds = ($bonds_percent / 2) * (1 + 0.05) ** $years; 
-            
-          //   $current_balance = $balance * (1 + $interest) ** years - $hospitalisation + $years;
-          //   $current_mat_cnt = $maturity_cnt - $years;
-          
-          //   echo "
-            
-          //       Your current savings balance is: $current_balance </br>
-            
-          //   ";
 
-          //   $_SESSION['age'] = $age;
-          //   $_SESSION['balance'] = $current_balance;
-          //   $_SESSION['maturity_count'] = $current_mat_cnt;
 
-          //   if ($balance >= 0) {
-          //     echo "      
-          //       <form action='scenario_4.php' method='post'>
-          //           <input type='submit' value='Next'>
-          //       </form>
-          //   "; 
-          //   } else {
-          //     echo "Sorry but you have failed to maintain a good portfolio
-          //       <form action='scenario_main.php' method='post'>
-          //           <input type='submit' value='Go Back to Main Page'>
-          //       </form>
-          //   ";
-          // }
 
-        ?>
+  <!-- <p>
 
-    </p>
+  // bonds
+  // Principle * (1 + interest) ** years at par value
+  //   $bonds = ($bonds_percent / 2) * (1 + 0.05) ** $years; 
+
+  //   $current_balance = $balance * (1 + $interest) ** years - $hospitalisation + $years;
+  //   $current_mat_cnt = $maturity_cnt - $years;
+
+  //   echo "
+
+  //       Your current savings balance is: $current_balance </br>
+
+  //   ";
+
+  //   $_SESSION['age'] = $age;
+  //   $_SESSION['balance'] = $current_balance;
+  //   $_SESSION['maturity_count'] = $current_mat_cnt;
+
+  //   if ($balance >= 0) {
+  //     echo "      
+  //       <form action='scenario_4.php' method='post'>
+  //           <input type='submit' value='Next'>
+  //       </form>
+  //   "; 
+  //   } else {
+  //     echo "Sorry but you have failed to maintain a good portfolio
+  //       <form action='scenario_main.php' method='post'>
+  //           <input type='submit' value='Go Back to Main Page'>
+  //       </form>
+  //   ";
+  // }
+</p> -->
   </div>
 </body>
+
 </html>
