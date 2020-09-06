@@ -8,8 +8,10 @@ class ConnectionManager {
         $username = "root";
         $dbname = "hackathon";
         $port = 3306;
-	    $password = "ykJ7OaMCEexF"; 
-        if(strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN'){
+        $password = ""; 
+        if(strtoupper(substr(PHP_OS, 0, 3)) === 'LIN'){
+            $password='hackathon';
+        }elseif(strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN'){
 	        $password = "root";
 	    }
 
