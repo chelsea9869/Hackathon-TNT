@@ -49,7 +49,7 @@ $interest = $_SESSION['interest']
             // Tuition Fee Loan
             $loan = 10000 * (1.0475) ** 5;
 
-            $current_balance = $balance * (1 + $interest) ** years - $loan;
+            $current_balance = $balance * (1 + $interest) ** $years - $loan;
             $current_mat_cnt = $maturity_cnt - $years;
             
             echo "

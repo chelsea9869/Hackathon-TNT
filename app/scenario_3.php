@@ -66,7 +66,7 @@
         
         <?php
             
-            $current_balance = $balance * (1 + $interest) ** years - $hospitalisation + $bonds;
+            $current_balance = $balance * (1 + $interest) ** $years - $hospitalisation + $bonds;
             $current_mat_cnt = $maturity_cnt - $years;
           
             echo "

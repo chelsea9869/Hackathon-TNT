@@ -47,7 +47,7 @@
 
     .button {
       border: none;
-      color: white;
+      color: auto;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
