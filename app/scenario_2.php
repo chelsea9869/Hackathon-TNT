@@ -57,21 +57,15 @@ $interest = $_SESSION['interest']
 
             // Tuition Fee Loan
             $loan = 10000 * (1.0475) ** 5;
-            echo "$loan <br>";
-            echo "$interest <br>";
-            echo "$years <br>";
-            echo "$balance <br>";
 
-            $current_balance = ($balance * (1 + $interest) ** $years) - $loan;
-            $current_balance = number_format($current_balance, 2);
-
-            echo "$current_balance <br>";
+            $current_balance = $balance * ((1 + $interest) ** $years) - $loan;
+            $current_balance_1 = number_format($current_balance, 2);
 
             $current_mat_cnt = $maturity_cnt - $years;
             
             echo "
             <br>
-                Your current savings balance is: $$current_balance </br>
+                Your current savings balance is: $$current_balance_1 </br>
                 Your bonds have $current_mat_cnt years to mature </br>
             ";
 

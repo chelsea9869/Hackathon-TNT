@@ -81,12 +81,12 @@
           <?php
 
             $current_balance = $balance * (1 + $interest) ** $years - $hospitalisation + $bonds;
-            $current_balance = number_format($current_balance, 2);
+            $current_balance_1 = number_format($current_balance, 2);
             $current_mat_cnt = $maturity_cnt - $years;
           
             echo "
             <br>
-                Your current savings balance is: $$current_balance </br>
+                Your current savings balance is: $$current_balance_1 </br>
             ";
 
             $_SESSION['age'] = $age;

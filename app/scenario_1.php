@@ -66,11 +66,11 @@ $interest = $_SESSION['interest'];
           <?php
 
             $current_balance = ($savings_percent / 100) * $balance * (1 + $interest) ** $years;
-            $current_balance = number_format($current_balance, 2);
+            $current_balance_1 = number_format($current_balance, 2);
             $current_mat_cnt = $maturity_cnt - $years;
             echo "
             <br>
-                      Your current savings balance is: $$current_balance </br>
+                      Your current savings balance is: $$current_balance_1 </br>
                       Your bonds have $current_mat_cnt years to mature </br>
                   
                   ";
@@ -148,10 +148,9 @@ $interest = $_SESSION['interest'];
       //       </form>
       //   ";
       // }
-
       ?> 
-    </p>
-  </div>
+  <!-- //   </p>
+  // </div> -->
 </body>
 
 </html>
