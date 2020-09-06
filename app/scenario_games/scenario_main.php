@@ -1,11 +1,11 @@
 <?php
 
 require_once '../include/common.php';
-session_unset;
+session_unset();
 
 $product_list = [
     "Bonds" => "A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental).
-    Bond Information, Face Value: $1000, Interest 5%, Matruity Date: 10 years later",
+    Bond Information, Face Value: $1000, Interest 10%, Matruity Date: 10 years later",
     "Insurance" => "Insurance is a contract, represented by a policy, in which an individual or entity receives financial protection or reimbursement against losses from an insurance company.",
     "Savings" => "Savings is the money a person has left over when they subtract their consumer spending from their disposable income over a given time period. "
 ];
@@ -81,8 +81,8 @@ $_SESSION['maturity_count'] = 10;
                     }
                     ?>
             </table>
-
-            <input type="submit" name="Proceed to Scenario Game">
+            <br>
+            <input type="submit" value="Proceed to Scenario Game">
 
         </form>
     </div>

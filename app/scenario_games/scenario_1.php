@@ -10,15 +10,16 @@ $years = 2;
 $bonds_percent = $_SESSION["bonds"] = $_POST["Bonds-percent"];
 $insurance_percent = $_SESSION["insurance"] = $_POST["Insurance-percent"];
 $savings_percent = $_SESSION["savings"] = $_POST["Savings-percent"];
-$cpf_percent = $_SESSION["cpf"] = $_POST["CPF-percent"];
+// $cpf_percent = $_SESSION["cpf"] = $_POST["CPF-percent"];
 
 $bond_r = $_SESSION['bond_rate'];
 $maturity_cnt = $_SESSION['maturity_count'];
 $age = $_SESSION['age'] + $years;
 $balance = $_SESSION['balance'];
-$interest = $_SESSION['interest']
+$interest = $_SESSION['interest'];
 
 // echo $_SESSION["cpf"];
+echo $_SESSION["insurance"];
 
 ?>
 
@@ -70,11 +71,21 @@ $interest = $_SESSION['interest']
       $_SESSION['balance'] = $current_balance;
       $_SESSION['maturity_count'] = $current_mat_cnt;
 
-      ?>
+      if ($current_balance >= 0) {
+          echo "      
+            <form action='scenario_2.php' method='post'>
+                <input type='submit' value='Next'>
+            </form>
+        "; 
+      } else {
+        echo "<br><h4>Sorry but you have failed to maintain a good portfolio</h4>
+            <form action='scenario_main.php' method='post'>
+                <input type='submit' value='Go Back to Main Page'>
+            </form>
+        ";
+      }
 
-      <form action="scenario_2.php" method="post">
-        <input type="submit">
-      </form>
+      ?>
     </p>
   </div>
 </body>
