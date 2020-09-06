@@ -2,13 +2,14 @@
 <html >
 
 <?php
-   include 'navbar.php';
-   require_once 'include/common.php';
+    
+    include 'navbar.php';
+    require_once 'include/common.php';
 
     $years = 3;
 
     $insurance_percent = $_SESSION['insurance'];
-    $bonds_percent = $_SESSION['bonds'];
+    
     $bond_r = $_SESSION['bond_rate'];
     $maturity_cnt = $_SESSION['maturity_count'];
     $age = $_SESSION['age']+$years;
@@ -20,15 +21,17 @@
 ?>
 
 <head>
-  <title> The Millionnials </title>
+  <title> The Millionnials </title> 
   <style type="text/css">
     .centerDiv
     {
       width: 60%;
-      height:auto;
+      height:200px;
       margin: 0 auto;
-      background-color:#D3D3D3 ;
+      background-color:#6899e8 ;
+      opacity: 0.4
     }
+    h3 {text-align: center}
   </style>
 
 </head>
@@ -37,40 +40,40 @@
     <h3> Scenario 3 </h3>
     <p> 
         <?php 
-            // bonds
-            // Principle * (1 + interest) ** years at par value
-            $bonds = ($bonds_percent / 100) * 50000 * (1 + 0.1) ** $years; 
-            $_SESSION['bondsfinal'] = $bonds;
-
             echo "
                 ... 5 years later, you are now $age years old
             "; 
         ?>
     </p>
+
     <p>
-        Yay! Your bonds have just matured! The lump sum of <?php echo $bonds; ?> is saved to your savings account! <br><br>
-        However, you have just experienced an accident. <br><br>
+        Congratulations
         <?php 
           
           if($insurance_percent >= 10) {
             echo "Thankfully, you have invested more than 10% in your insurance and that is enough to cover your hospitalisation fees";
             $hospitalisation = 0;
           } else {
-            echo "You did not purchased enough insurance to cover your hospitalisation fees, $20,000 dollars have deducted from your account to pay for the fees";
-            $hospitalisation = 20000;
+            echo "You did not purchased enough insurance to cover your hospitalisation fees, $10,000 dollars have deducted from your account to pay for the fees";
+            $hospitalisation = 10000;
           }
 
         ?>
     </p>
+
     <p>
         
         <?php
+          
+            // bonds
+            // Principle * (1 + interest) ** years at par value
+            $bonds = ($bonds_percent / 2) * (1 + 0.05) ** $years; 
             
-            $current_balance = $balance * (1 + $interest) ** years - $hospitalisation + $bonds;
+            $current_balance = $balance * (1 + $interest) ** years - $hospitalisation + $years;
             $current_mat_cnt = $maturity_cnt - $years;
           
             echo "
-            <br>
+            
                 Your current savings balance is: $current_balance </br>
             
             ";
@@ -79,14 +82,14 @@
             $_SESSION['balance'] = $current_balance;
             $_SESSION['maturity_count'] = $current_mat_cnt;
 
-            if ($current_balance >= 0) {
+            if ($balance >= 0) {
               echo "      
-                <form action='scenario_final_report.php' method='post'>
+                <form action='scenario_4.php' method='post'>
                     <input type='submit' value='Next'>
                 </form>
             "; 
             } else {
-              echo "<br><h4>Sorry but you have failed to maintain a good portfolio</h4>
+              echo "Sorry but you have failed to maintain a good portfolio
                 <form action='scenario_main.php' method='post'>
                     <input type='submit' value='Go Back to Main Page'>
                 </form>

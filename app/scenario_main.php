@@ -25,7 +25,7 @@ $_SESSION['maturity_count'] = 10;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safeguard Your Money</title>
+    <title> The Millionnials </title>
 </head>
 
 <div id='main-content'>

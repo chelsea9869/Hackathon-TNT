@@ -5,11 +5,11 @@ $result = "uncertain";
 $explaination = "";
 
 $answer_qn1 = $_POST["general"];
-$answer_qn2 = $_POST["qn2"];
-$answer_qn3 = $_POST["qn3"];
-$answer_qn4 = $_POST["qn4"];
-$answer_qn5 = $_POST["qn5"];
-$answer_qn6 = $_POST["qn6"];
+$answer_qn2 = $_POST["q2"];
+$answer_qn3 = $_POST["q3"];
+$answer_qn4 = $_POST["q4"];
+$answer_qn5 = $_POST["q5"];
+$answer_qn6 = $_POST["q6"];
 
 $score = $answer_qn1 + $answer_qn2 + $answer_qn3 + $answer_qn4 + $answer_qn5 + $answer_qn6;
 
@@ -37,7 +37,7 @@ if ($score > 20) {
 <html>
 
 <head>
-    <title>Risk Test Result</title>
+    <title> The Millionnials </title>
 </head>
 
 <body>

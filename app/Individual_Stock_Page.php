@@ -17,10 +17,10 @@
 ?>
 <head>
 
-  <title>
-    Individual Stock Page
-  </title>
-
+  <title> The Millionnials </title>
+  <style>
+    .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
+  </style>
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -39,13 +39,10 @@
   </div>
 
 
-  <div class="container">
   
-  <header class="header">
-      <h1 id="title" class="text-center"> </h1>
-      <p id="description" class="description text-center"> <?php echo($name);?>s </p>
-  </header>
-  </div>
+<div class="pricing-header text-center" style="margin-bottom:30px;margin-top:30px;">
+  <h1 class="display-5"><?=$name?></h1>
+</div>
 
 
   <div class="container">

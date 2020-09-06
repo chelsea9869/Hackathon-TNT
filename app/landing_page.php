@@ -45,8 +45,8 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Understand your risk tolerance</li>
-                        <li>Scenario Game</li>
+                        <li>Interactive Games</li>
+                        <li>Scenario Simulation</li>
                         <li>Financial Planning</li>
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_main.php'">Start a Game</button>
@@ -59,11 +59,11 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
+                        <li>Understand your risk tolerance</li>
                         <li>Trading Simulation</li>
-                        <li>Share with your friends</li>
                         <li>Learn and earn</li>
                     </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start Simulation</button>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='risk_test.php'">Start Growing</button>
                 </div>
             </div>
         </div>
@@ -99,32 +99,6 @@
             </div>
         </footer>
     </div>
-
-
-    <!-- <div class="container-fluid mt-2">
-
-        <h2> The Millionnials </h2>
-    </div>
-
-    <div class="h-100 row align-items-center">
-        <div class="container text-center" style="border:1px solid #cecece;">
-            
-            <div class="row">
-                                
-
-                <div class="col-sm-4 bg-color">
-                <a class="btn btn-primary" href="bookkeeping-page.php" role=button>Watch Your Money</a>
-                    
-                </div>
-                <div class="col-sm">
-                <button type="button" class="btn btn-primary">Safeguard Your Money</button>
-                </div>
-                <div class="col-sm">
-                <button type="button" class="btn btn-primary">Grow Your Money</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 </body>
 
