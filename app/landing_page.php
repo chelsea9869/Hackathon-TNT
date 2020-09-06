@@ -42,7 +42,7 @@
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Your starting point</li>
                         <li>Bookkeeping</li>
-                        <li>Know where you spend</li>   
+                        <li>Know where you spend</li>
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='bookkeeping-page.php'">Start Bookkeeping</button>
                 </div>

@@ -6,9 +6,9 @@
 
 <head>
 
-<title>
-    The Millionnials
-</title>
+    <title>
+        The Millionnials
+    </title>
 
 </head>
 
