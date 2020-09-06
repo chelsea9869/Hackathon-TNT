@@ -123,14 +123,16 @@
 
                 <div class="col-sm-4 bg-color">
                 <a class="btn btn-primary" href="bookkeeping-page.php" role=button>Watch Your Money</a>
-                    
                 </div>
+
                 <div class="col-sm">
-                <button type="button" class="btn btn-primary">Safeguard Your Money</button>
+                <a class="btn btn-primary" href="scenario_games/scenario_main.php" role=button>Safeguard Your Money</a>
                 </div>
+                
                 <div class="col-sm">
                 <button type="button" class="btn btn-primary">Grow Your Money</button>
                 </div>
+            
             </div>
         </div>
     </div> -->
