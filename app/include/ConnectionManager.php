@@ -11,7 +11,7 @@ class ConnectionManager {
         $password = ""; 
         
         if(strtoupper(substr(PHP_OS, 0, 3)) === 'LIN'){
-            $password = "hackathon";
+            $password = "root";
             $port = 3306;
 	    }elseif(strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN'){
             $password = "root";

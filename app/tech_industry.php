@@ -194,7 +194,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>Microsoft Corporation</td>
-    <td> <a href='individual_Stock_Page.php?Ticker=MSFT'> MSFT </td>
+    <td> <a href='individual_stock.php?Ticker=MSFT'> MSFT </td>
     
     <td><?php echo ($tickerDic['MSFT']['last'])?></td>
     <td><?php echo ($tickerDic['MSFT']['change'])?></td>
@@ -207,7 +207,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>Apple Inc.</td>
-    <td><a href='individual_Stock_Page.php?Ticker=AAPL'>AAPL</td>
+    <td><a href='individual_stock.php?Ticker=AAPL'>AAPL</td>
     <td><?php echo ($tickerDic['AAPL']['last'])?></td>
     <td><?php echo ($tickerDic['AAPL']['change'])?></td>
     <td>  <?php echo ($tickerDic['AAPL']['percentage'])?> </td>
@@ -219,7 +219,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>Amazon.com</td>
-    <td><a href='individual_Stock_Page.php?Ticker=AMZN'> AMZN</td>
+    <td><a href='individual_stock.php?Ticker=AMZN'> AMZN</td>
     <td><?php echo ($tickerDic['AMZN']['last'])?></td>
     <td><?php echo ($tickerDic['AMZN']['change'])?></td>
     <td> <?php echo ($tickerDic['AMZN']['percentage'])?> </td>
@@ -232,7 +232,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
   
   <tr>
     <td>Facebook</td>
-    <td><a href='individual_Stock_Page.php?Ticker=FB'>FB</td>
+    <td><a href='individual_stock.php?Ticker=FB'>FB</td>
     <td><?php echo ($tickerDic['FB']['last'])?></td>
     <td><?php echo ($tickerDic['FB']['change'])?></td>
     <td> <?php echo ($tickerDic['FB']['percentage'])?> </td>
@@ -244,7 +244,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>Alibaba Group Holding Limited</td>
-    <td><a href='individual_Stock_Page.php?Ticker=BABA'>BABA</td>
+    <td><a href='individual_stock.php?Ticker=BABA'>BABA</td>
     <td><?php echo ($tickerDic['BABA']['last'])?></td>
     <td><?php echo ($tickerDic['BABA']['change'])?></td>
     <td> <?php echo ($tickerDic['BABA']['percentage'])?> </td>
@@ -256,7 +256,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>Tesla, Inc.</td>
-    <td><a href='individual_Stock_Page.php?Ticker=TSLA'>TSLA</td>
+    <td><a href='individual_stock.php?Ticker=TSLA'>TSLA</td>
     <td><?php echo ($tickerDic['TSLA']['last'])?></td>
     <td><?php echo ($tickerDic['TSLA']['change'])?></td>
     <td> <?php echo ($tickerDic['TSLA']['percentage'])?> </td>
@@ -268,7 +268,7 @@ A high P/E ratio could mean that a company's stock is over-valued, or else that 
 
   <tr>
     <td>PayPal Holdings, Inc.</td>
-    <td><a href='individual_Stock_Page.php?Ticker=PYPL'>PYPL</td>
+    <td><a href='individual_stock.php?Ticker=PYPL'>PYPL</td>
     <td><?php echo ($tickerDic['PYPL']['last'])?></td>
     <td><?php echo ($tickerDic['PYPL']['change'])?></td>
     <td><?php echo ($tickerDic['PYPL']['percentage'])?> </td>
