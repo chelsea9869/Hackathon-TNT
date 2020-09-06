@@ -52,7 +52,7 @@
 
     <div class="form-group">
       <p><strong>5. In terms of experience, how comfortable are you investing in stocks or stock mutual funds?</strong></p>
-      <label><input name="q5" value="1" type="radio" class="input-radio" /> Not at all comfortabl</label><br>
+      <label><input name="q5" value="1" type="radio" class="input-radio" /> Not at all comfortable</label><br>
       <label><input name="q5" value="2" type="radio" class="input-radio" /> Somewhat comfortable</label> <br>
       <label><input name="q5" value="3" type="radio" class="input-radio" /> Very comfortable</label><br>
     </div>
