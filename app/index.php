@@ -5,13 +5,10 @@
 
 
 <head>
-
     <title>
         The Millionnials
     </title>
-
 </head>
-
 
 <?php
 include 'landing_page.php';

@@ -10,7 +10,7 @@ echo '
     <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href=\'index.php\'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="invest.php">Pricing</a>
         <a class="p-2 text-dark" href="#">Donate</a>
         <a class="p-2 text-dark" href="#">Contact</a>
     </nav>
