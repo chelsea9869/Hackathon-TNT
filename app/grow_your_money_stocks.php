@@ -48,7 +48,7 @@
     <div class="col-sm-8"> </div>
     <div class="col-sm-4">
        <div class="container">
-       <p>Goal <mark> Nike AJ $200 </mark> Current Earnings:<mark> $0 </mark> </p>
+       <p>Goal: <mark> Nike AJ $200 </mark> Current Earnings:<mark> $0 </mark> </p>
        </div>
     </div>
   </div>

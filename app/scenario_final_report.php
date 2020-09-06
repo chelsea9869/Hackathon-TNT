@@ -112,7 +112,7 @@ $interest = $_SESSION['interest']
             </tr>
             <tr>
               <th style="text-align: center; vertical-align: middle;" scope="row">Total amount earned from Bonds</th>
-              <td style="text-align: center; vertical-align: middle;">$<?php echo (number_format($bondsfinal, 2)); ?></td>
+              <td style="text-align: center; vertical-align: middle;">$<?php echo number_format(floatval($bondsfinal), 2); ?></td>
             </tr>
             <tr>
               <th style="text-align: center; vertical-align: middle;" scope="row">Insurance helped you saved</th>
