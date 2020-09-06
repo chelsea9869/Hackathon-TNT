@@ -1,5 +1,5 @@
 <?PHP
-
+require_once 'include/common.php';
 $score = 0;
 $result = "uncertain";
 $explaination = "";
@@ -32,6 +32,9 @@ if ($score > 20) {
     $explaination = "You tend to choose the preservation of capital over the potential for a higher-than-average return.";
 }
 
+$username='Alice Young';
+$userDao = new UserDAO();
+$userDao->updateRiskProfile($username,$result);
 ?>
 
 <html>

@@ -1,7 +1,7 @@
 <?php
 require_once 'include/BookkeepingDAO.php';
 
-$_SESSION['username'] = 'amy';
+$_SESSION['username'] = 'Alice Young';
 $username = $_SESSION['username'];
 
 // for dropdown list
@@ -72,7 +72,7 @@ foreach ($todayRecords as $record) {
         }
 
         #record-form-table th{
-            background-color: #6899e8;
+            background-color: #92b9f7;;
             color: white;
         }
 

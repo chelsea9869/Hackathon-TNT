@@ -25,7 +25,7 @@ th, td {
 }
 
 th {
-  background-color: #6899e8;
+  background-color: #92b9f7;
   color: white;
 }
 

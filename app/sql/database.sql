@@ -4,7 +4,7 @@ use hackathon;
 
 create table user(
 	username varchar(128) primary key,
-    profile varchar(5)
+    profile varchar(50)
 );
 
 create table bookkeeping(
@@ -18,4 +18,4 @@ create table bookkeeping(
     constraint foreign key (username) references user(username) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-Insert into user values ("amy", "high");
+Insert into user (username) values ("Alice Young");
