@@ -35,18 +35,7 @@
         <a class="btn btn-outline-primary" href="#">Log in</a>
     </div>
 
-        <!-- <table class='table'>
-          <thead >
-          <tr class = 'subtitle'  > 
-            <th scope="col"><a href='tech_industry.php'>Technology</th>
-            <th scope="col">Aircraft</th>
-            <th scope="col">Financial</th>
-            <th scope="col">Energy</th>
-            <th scope="col">Real Estate</th>
-  
-          </tr>
-        </thead>
-        </table> -->
+     
 
 
     <div class="pricing-header text-center" style="margin-bottom:30px;margin-top:30px;">
@@ -62,7 +51,7 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Price Change: -1.34%</li>
+                        <li> <p style="color:red">Price Change: -1.34%</p></li>
                         
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='tech_industry.php'">View Stocks</button>
@@ -76,7 +65,8 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Price Change: +0.77%</li>
+                      
+                        <li> <p style="color:green">Price Change: +0.77%</p></li>
             
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='tech_industry.php'">View Stocks</button>
@@ -90,7 +80,8 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Price Change: -0.73%</li>
+                         <li> <p style="color:red">Price Change: -0.73%</p></li>
+                        
 
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='tech_industry.php'">View Stocks</button>
@@ -104,7 +95,8 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                      <li>Price Change: -0.47%</li>
+                        <li> <p style="color:red">Price Change: -0.47%</p></li>
+                      
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='tech_industry.php'">View Stocks</button>
                 </div>
@@ -117,7 +109,8 @@
                 <div class="card-body">
                     <!-- <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
-                        <li>Price Change: -5.63%</li>
+                    <li> <p style="color:red">Price Change: -5.63%</p></li>
+                       
                     </ul>
                     <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="window.location.href='tech_industry.php'">View Stocks</button>
                 </div>
