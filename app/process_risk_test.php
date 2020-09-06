@@ -46,38 +46,38 @@ if ($score > 20) {
 
     <div class="container">
         <div class="jumbotron mt-3">
-            <h1>Your risk tolerance level is: <?php echo "$result" ?></h1>
+            <h2>Your risk tolerance level is: <?php echo "$result" ?></h2>
             <p class="lead"><?php echo "$explaination" ?> </p>
-            <a class="btn btn-lg btn-primary" href="grow_your_money.php" role="button">Grow Your Money &raquo;</a>
+            <br>
+            <h4>Set a realistic goal according to your risk appetite:</h4>
+            <br>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Starting Investment Amount</label>
+                    <input type="text" class="form-control" id="amount" aria-describedby="emailHelp" placeholder="Enter the amount you want to invest">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Item you want to buy</label>
+                    <input type="text" class="form-control" id="item" placeholder="Enter the item you want to purchase i.e. Nintendo Switch">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">How much does it cost</label>
+                    <input type="text" class="form-control" id="cost" placeholder="Enter the cost of the item">
+                </div>
+
+                <!-- <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                <!-- <button type="submit" class="btn btn-primary" value="dada">Grow Your Money  &raquo;</button> -->
+            </form>
+
+            <a class="btn btn-lg btn-primary" href="grow_your_money_main.php" role="button">Grow Your Money &raquo;</a>
         </div>
     </div>
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Bottom navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item dropup">
-                    <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
 </body>
 
 </html>
