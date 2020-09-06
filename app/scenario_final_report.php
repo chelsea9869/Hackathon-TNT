@@ -96,7 +96,7 @@ $interest = $_SESSION['interest']
       <br>
 
       <p id="tabletext">
-        Here is the summary report for your portfolio. Share the report with your friends now!
+        Here is the summary report for your portfolio. Share the report with your friends now! &nbsp;&nbsp;<img src='img/twitter-logo.png' style='height:15px;'>&nbsp;<img src='img/fb.png' style='height:15px;'>
 
         <table class="table" style="width:85%">
           <thead class="thead-light">
