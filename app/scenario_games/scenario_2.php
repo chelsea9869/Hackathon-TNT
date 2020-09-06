@@ -5,7 +5,7 @@
     
     require_once '../include/common.php';
 
-    $years = 2;
+    $years = 5;
 
     $bonds_percent = $_SESSION["bonds"] = $_POST["Bonds-percent"];
     $insurance_percent = $_SESSION["insurance"] = $_POST["Insurance-percent"];
@@ -37,25 +37,24 @@
 </head>
 <body>
   <div class="centerDiv">
-    <h3> Scenario 1 </h3>
+    <h3> Scenario 2 </h3>
     <p> 
         <?php 
             echo "
-                ... 2 years later, you are now $age years old
+                ... 5 years later, you are now $age years old
             "; 
         ?>
     </p>
     <p>
-        Congratulations on your recent graduation from SMU! It is time for you to start repaying your tuition fee loan. You have opted to 
-        repay your loans at one shot. You have to pay $10,000 within 5 years with annual interest of 4.75%
+        Oops! Recession is happening now and the economy is bad. Savings annual interest rate has dropped to 0.5%!
     </p>
     <p>
         
         <?php
 
-            $current_balance = ($savings_percent / 100) * $balance * (1 + $interest) ** $years;
-            
+            $current_balance = $balance * (1 + $interest / 100) ** years;
             $current_mat_cnt = $maturity_cnt - $years;
+            
             echo "
             
                 Your current savings balance is: $current_balance </br>
@@ -69,7 +68,7 @@
 
         ?>
 
-        <form action="scenario_2.php" method="post">
+        <form action="scenario_3.php" method="post">
             <input type="submit">
         </form>
     </p>
