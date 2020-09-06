@@ -47,12 +47,16 @@
     </p>
     <p>
         Oops! Recession is happening now and the economy is bad. Savings annual interest rate has dropped to 0.5%!
+        You have also successfully repaid all your tuition fee loan!
     </p>
     <p>
         
         <?php
 
-            $current_balance = $balance * (1 + $interest / 100) ** years;
+            // Tuition Fee Loan
+            $loan = 10000 * (1.0475) ** 5;
+
+            $current_balance = $balance * (1 + $interest) ** years - $loan;
             $current_mat_cnt = $maturity_cnt - $years;
             
             echo "
