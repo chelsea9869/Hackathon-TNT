@@ -51,7 +51,7 @@ $interest = $_SESSION['interest']
         You have also successfully repaid all your tuition fee loan!
     </p>
     <p>
-
+      <?php
             // Tuition Fee Loan
             $loan = 10000 * (1.0475) ** 5;
 
@@ -68,6 +68,7 @@ $interest = $_SESSION['interest']
       $_SESSION['age'] = $age;
       $_SESSION['balance'] = $current_balance;
       $_SESSION['maturity_count'] = $current_mat_cnt;
+      $_SESSION['interest'] = 0.05;
 
       ?>
 

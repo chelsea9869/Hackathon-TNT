@@ -37,7 +37,7 @@
 </head>
 <body>
   <div class="centerDiv">
-    <h3> Scenario 2 </h3>
+    <h3> Scenario 3 </h3>
     <p> 
         <?php 
             echo "
