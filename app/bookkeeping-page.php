@@ -1,5 +1,6 @@
 <?php
 require_once 'include/BookkeepingDAO.php';
+
 $_SESSION['username'] = 'amy';
 $username = $_SESSION['username'];
 
@@ -20,10 +21,14 @@ $expense_dropdown .= "</select>";
 // for interaction with database
 $bookkeepingDao = new BookkeepingDAO();
 $date = date("Y-m-d");
-
+$_SESSION['error'] = '';
 // for adding records
 if (isset($_POST) and !empty($_POST)) {
-    $status = $bookkeepingDao->addRecord($username, $date, $_POST);
+    if(empty($_POST['item']) || empty($_POST['amount']) || ! array_key_exists('category', $_POST)){
+        $_SESSION['error']="You did not enter all required fields when inputing records for {$_POST['type']}";
+    }else{
+        $status = $bookkeepingDao->addRecord($username, $date, $_POST);
+    }
 }
 
 // retrieving today's records and summarize
@@ -107,6 +112,9 @@ foreach ($todayRecords as $record) {
     <div id='main-content' style='width:100%'>
         <div id='left-content' style='width:49%;display:inline-table;margin-top:20px;margin-left:1%'>
             <div id='bookkeeping-input-expense' style='width:100%;'>
+                <div id='error' style="color:red;margin-bottom:5px">
+                    <?php echo $_SESSION['error']; unset($_SESSION['error']);?>
+                </div>
                 <div class="pricing-header text-center"> 
                     <h4> Input Your Expense</h4>
                 </div>
@@ -161,10 +169,7 @@ foreach ($todayRecords as $record) {
                     <h4>Daily Summary</h4>
                 </div>
                 <table id='summary-table' style='font-size:large;width:60%;margin-left: auto;margin-right: auto; margin-top:20px'>
-                    <tr style='background-color:#6899e8;color:white'>
-                        <th>Info</th>
-                        <th style='text-align:right'>Value</th>
-                    </tr>
+
                     <tr>
                         <th>Date</th>
                         <td><?= $date ?></td>
