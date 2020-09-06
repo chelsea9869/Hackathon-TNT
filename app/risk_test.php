@@ -1,3 +1,16 @@
+<?php
+  require_once 'include/common.php';
+
+  $username='Alice very Old';
+  $userDao = new UserDAO();
+  $profile=$userDao->retrieveProfile($username);
+  
+  if(!is_null($profile) && !(isset($_GET) && !empty($_GET) && $_GET['survey']=='True')){
+    header('Location:./process_risk_test.php?survey=False');
+    return;
+  }  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- <link rel="stylesheet" href="styles.css"> -->
@@ -7,7 +20,9 @@
     .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
   </style>
 </head>
-<?php include 'navbar.php'; ?>
+<?php 
+  include 'navbar.php'; 
+?>
 
 <div class="pricing-header text-center">
   <h1 class="display-5">Financial Risk Tolerance Assessment</h1>
