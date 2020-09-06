@@ -8,83 +8,72 @@
     <title> The Millionnials </title>
 
     <style>
-      .display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
-  </style>
+        .display-5 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 1.2
+        }
+    </style>
 </head>
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
-
 
 <body>
 
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <img class="my-0 mr-md-auto font-weight-normal" onclick="window.location.href='index.php'" src="img/logo.jpg" alt="" width="180" height="54"> </img>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Features</a>
-      <a class="p-2 text-dark" href="#">Support</a>
-      <a class="p-2 text-dark" href="#">Donate</a>
-      <a class="p-2 text-dark" href="#">Contact</a>
-    </nav>
-    <a class="btn btn-outline-primary" href="#">Log in</a>
-  </div>
+    <?php include "navbar.php"; ?>
 
     <div class="pricing-header text-center" style='margin-bottom:50px;margin-top:50px'>
         <h1 class="display-5">Upgrade to Unlock Investment Simulation</h1>
     </div>
 
     <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Free Basic Plan</li>
-              <li>Bookkeeping</li>
-              <li>Scenario Games</li>
-              <li>Market Intelligence</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Current Plan</button>
-          </div>
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Free Basic Plan</li>
+                        <li>Bookkeeping</li>
+                        <li>Scenario Games</li>
+                        <li>Market Intelligence</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Current Plan</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>All features in Free Plan</li>
+                        <li>Access to Investment Simulation</li>
+                        <li>Investment Advice</li>
+                        <li>Help Center Access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Subscribe</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>All features in Pro Plan</li>
+                        <li>Access to Investment Platform</li>
+                        <li>Instant Market Intelligence</li>
+                        <li>24hrs Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+            </div>
         </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$5 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>All features in Free Plan</li>
-              <li>Access to Investment Simulation</li>
-              <li>Investment Advice</li>
-              <li>Help Center Access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Subscribe</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>All features in Pro Plan</li>
-              <li>Access to Investment Platform</li>
-              <li>Instant Market Intelligence</li>
-              <li>24hrs Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
 
-   
+
 
 </body>
 
