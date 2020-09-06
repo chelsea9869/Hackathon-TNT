@@ -49,7 +49,11 @@
                         <li>Scenario Simulation</li>
                         <li>Financial Planning</li>
                     </ul>
+<<<<<<< HEAD
                     <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_games/scenario_main.php'">Start Gaming</button>
+=======
+                    <button type="button" class="btn btn-lg btn-block btn-primary" onclick="window.location.href='scenario_main.php'">Start a Game</button>
+>>>>>>> 1b91c37b23edbe4088a87610e44ad5cfd942eaaa
                 </div>
             </div>
             <div class="card mb-4 box-shadow">

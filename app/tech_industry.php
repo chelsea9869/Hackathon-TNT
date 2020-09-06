@@ -53,6 +53,7 @@ th {
 .CellWithComment:hover span.CellComment{
   display:block;
 }
+.display-5{font-size:2.5rem;font-weight:300;line-height:1.2}
 
 </style>
      
@@ -136,12 +137,8 @@ $queryString = http_build_query([
         <a class="btn btn-outline-primary" href="#">Log in</a>
 </div>
 
-<div class="container">
-  
-  <header class="header">
-      <h1 id="title" class="text-center">Technology Industry</h1>
-      <p id="description" class="description text-center"></p>
-  </header>
+<div class="pricing-header text-center" style="margin-bottom:30px;margin-top:30px">
+      <h1 class="display-5">Technology Industry</h1>
 </div>
 
 <div class="container">
