@@ -50,7 +50,7 @@
                   // bonds
                   // Principle * (1 + interest) ** years at par value
                   $bonds = ($bonds_percent / 100) * 50000 * (1 + 0.1) ** $years; 
-                  $bonds = number_format($bonds, 2);
+                  $bonds_1 = number_format($bonds, 2);
                   $_SESSION['bondsfinal'] = $bonds;
 
                   echo "
@@ -63,7 +63,7 @@
               <br>
 
               <li>
-                Yay! Your bonds have just matured! The lump sum of $<?php echo $bonds; ?> is saved to your savings account! <br><br>
+                Yay! Your bonds have just matured! The lump sum of $<?php echo $bonds_1; ?> is saved to your savings account! <br><br>
                 However, you have just experienced an accident. 
                 <?php 
                   
