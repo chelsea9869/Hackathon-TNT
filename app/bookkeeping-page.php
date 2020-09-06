@@ -270,7 +270,7 @@ foreach ($todayRecords as $record) {
 
                 labels: Object.keys(incomeArray),
                 datasets: [{
-                    label: "Expenses Proportion",
+                    label: "Income Proportion",
                     data: Object.values(incomeArray),
                     backgroundColor: colourCode
                 }]
@@ -282,7 +282,7 @@ foreach ($todayRecords as $record) {
                 },
                 title: {
                     display: true,
-                    text: "Source of Today's Expenses by Category",
+                    text: "Source of Today's Income by Category",
                     aspectRatio: 1
 
                 }
