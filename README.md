@@ -18,7 +18,7 @@ This is the project done by team TNT, with the collaboration form
 
 1. [Short description](#short-description)
 1. [Pitch video](#pitch-video)
-1. [Live demo](#live-demo)
+1. [Our app](#our-app)
 1. [Technologies used](#technologies-used)
 1. [Contributing](#contributing)
 1. [Acknowledgments](#acknowledgments)
@@ -46,9 +46,9 @@ Make Dreams Happen for Millennials.
 [![Watch The Millionnials pitch video](https://github.com/chelsea9869/Hackathon-TNT/blob/master/app/img/logo.jpg)](https://youtu.be/qkVdL0SoG2k)
 
 
-## Live demo
+## Our app
 
-You can find a running system at [The Millionnials](http://52.87.255.198/app/).
+You can find the live application at [The Millionnials](http://52.87.255.198/app/).
 
 ## Technologies used
 
