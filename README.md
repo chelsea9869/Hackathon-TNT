@@ -4,7 +4,7 @@ A one-stop factory for you to learn about financial knowledge and achieve your f
 <br>
 Where your journey to financial independence begins.
 
-[![Watch The Millionnials pitch video](https://github.com/chelsea9869/Hackathon-TNT/blob/master/app/img/logo.jpg)](https://github.com/chelsea9869/Hackathon-TNT)
+[![Watch The Millionnials pitch video](https://github.com/chelsea9869/the-millionnials/blob/master/app/img/logo.jpg)](https://github.com/chelsea9869/the-millionnials)
 
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Discord](https://img.shields.io/badge/chat-23%20online-brightgreen)](https://discord.gg/QWpnGx4) [![Website](https://img.shields.io/badge/View-Website-blue)](http://52.87.255.198/app/)
@@ -45,7 +45,7 @@ Make Dreams Happen for Millennials.
 
 ## Pitch video
 
-[![Watch The Millionnials pitch video](https://github.com/chelsea9869/Hackathon-TNT/blob/master/app/img/logo.jpg)](https://youtu.be/qkVdL0SoG2k)
+[![Watch The Millionnials pitch video](https://github.com/chelsea9869/the-millionnials/blob/master/app/img/logo.jpg)](https://youtu.be/qkVdL0SoG2k)
 
 
 ## Our app
@@ -68,7 +68,7 @@ Please contact the team for details on our code of conduct, and the process for 
 
 ## License
 
-This project is licensed under the Apache 2 License - see the [LICENSE](https://github.com/chelsea9869/Hackathon-TNT/blob/master/License.txt) file for details
+This project is licensed under the Apache 2 License - see the [LICENSE](https://github.com/chelsea9869/the-millionnials/blob/master/License.txt) file for details
 
 ## Acknowledgments
 
