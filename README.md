@@ -4,8 +4,10 @@ A one-stop factory for you to learn about financial knowledge and achieve your f
 <br>
 Where your journey to financial independence begins.
 
+[![Watch The Millionnials pitch video](https://github.com/chelsea9869/Hackathon-TNT/blob/master/app/img/logo.jpg)](https://youtu.be/qkVdL0SoG2k)
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Discord](https://img.shields.io/badge/Join-Slack-blue)](https://discord.gg/QWpnGx4) [![Website](https://img.shields.io/badge/View-Website-blue)](http://52.87.255.198/app/)
+
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Discord](https://img.shields.io/badge/chat-23%20online-brightgreen)](https://discord.gg/QWpnGx4) [![Website](https://img.shields.io/badge/View-Website-blue)](http://52.87.255.198/app/)
 
 This is the project done by team TNT, with the collaboration form 
 - [Bu Wende](https://github.com/BU-Wende)
