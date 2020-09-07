@@ -1,4 +1,4 @@
-# The Millionnials by Team TNT
+# [The Millionnials](http://52.87.255.198/app/) by Team TNT
 
 A one-stop factory for you to learn about financial knowledge and achieve your financial freedom.
 <br>
@@ -37,9 +37,9 @@ The solution should target youths with emphasis in helping them make sense of th
 
 The Millionnials is a web application designed for young people to gain financial knowledge through financial planning, scenario-based learning and trading simulation using real time market information. It enables our users to learn in three ways: watch your money, safeguard your money and grow your money.
 
-### Our MIssion
+### Our Mission
 
-Make the Millennials Millionares.
+Make Dreams Happen for Millennials.
 
 ## Pitch video
 
@@ -48,7 +48,7 @@ Make the Millennials Millionares.
 
 ## Live demo
 
-You can find a running system to test at [The Millionnials](http://52.87.255.198/app/).
+You can find a running system at [The Millionnials](http://52.87.255.198/app/).
 
 ## Technologies used
 
