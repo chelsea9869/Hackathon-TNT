@@ -68,7 +68,7 @@ Please contact the team for details on our code of conduct, and the process for 
 
 ## License
 
-This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the Apache 2 License - see the [LICENSE](https://github.com/chelsea9869/Hackathon-TNT/blob/master/License.txt) file for details
 
 ## Acknowledgments
 
