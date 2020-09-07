@@ -83,17 +83,14 @@
     <div class="col-sm-4"></div>
   </div>
 
-
-
-
-
-
 <?php
   
      
 
   $queryString = http_build_query([
-    'access_key' => 'a59f4f814f11f0044dd5136f4bce3567',
+    //'access_key' => 'a59f4f814f11f0044dd5136f4bce3567',
+    'access_key' => 'd8b97a4271e5595a7248980e05e7e14d',
+    //'access_key' => 'd8b97a4271e5595a7248980e05e7e4d',
     'symbols' => $ticker,
     'date_from' => '2020-01-01',
     'date_to' => '2020-09-05'
@@ -118,20 +115,32 @@
 
   $response_json = json_decode($api_response, true);
 
-  
-  $data = $response_json["data"];
+  //print_r($response_json);
 
-  $data_array = array();
-  foreach ($data as $day) {
-    $datetime = $day['date'];
-    $date = substr($datetime, 0, 10);
-    $price = $day['adj_close'];
-    //echo($date);
-    array_push($data_array, [$date, $price]);
+
+  if (array_key_exists("error",$response_json)){
+
+    $data2 = array (['2020-09-01', 227.27 ],['2020-08-31', 222.53 ],['2020-08-28', 221.27 ],['2020-08-27', 220.27 ], ['2020-08-26', 223.27 ],['2020-08-25', 219.27 ],['2020-08-24', 218.27 ],);
+    $reserved_data = array_reverse($data2); 
+  }else{
+    $data = $response_json["data"];
+
+    $data_array = array();
+    foreach ($data as $day) {
+      $datetime = $day['date'];
+      $date = substr($datetime, 0, 10);
+      $price = $day['adj_close'];
+      //echo($date);
+      array_push($data_array, [$date, $price]);
+      
   }
 
-  $reserved_data = array_reverse($data_array);
-  //print_r($reserved_data);
+    $reserved_data = array_reverse($data_array);
+    //print_r($reserved_data);
+  }
+
+ 
+
 
 
 
